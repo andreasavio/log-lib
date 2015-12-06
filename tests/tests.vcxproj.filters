@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Header Files\utils">
+      <UniqueIdentifier>{e8ae69dd-d4b9-406c-9f5b-852d8da855d5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\utils">
+      <UniqueIdentifier>{3f4dfe19-b00c-42cd-b922-bbc9f1f54fc4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\test_cases">
+      <UniqueIdentifier>{53ef9ab3-411d-4577-9209-eb5af2193410}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="utils\read_file_content.cpp">
+      <Filter>Source Files\utils</Filter>
+    </ClCompile>
+    <ClCompile Include="test_cases\test_log_custom_type.cpp">
+      <Filter>Source Files\test_cases</Filter>
+    </ClCompile>
+    <ClCompile Include="test_cases\test_macros.cpp">
+      <Filter>Source Files\test_cases</Filter>
+    </ClCompile>
+    <ClCompile Include="test_cases\test_multiple_streams.cpp">
+      <Filter>Source Files\test_cases</Filter>
+    </ClCompile>
+    <ClCompile Include="test_cases\test_severity_levels.cpp">
+      <Filter>Source Files\test_cases</Filter>
+    </ClCompile>
+    <ClCompile Include="test_cases\test_stream_writer.cpp">
+      <Filter>Source Files\test_cases</Filter>
+    </ClCompile>
+    <ClCompile Include="test_cases\test_output_streams_types.cpp">
+      <Filter>Source Files\test_cases</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="utils\read_file_content.hpp">
+      <Filter>Header Files\utils</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
