@@ -10,7 +10,7 @@ log_lib is a small, header-only logger library providing the following functions
 - Write to multiple data streams, such as std::cout or file streams, from multiple threads;
 - Ability to log default data types.
 
-The library has been built and tested on msvc 12 (2013).
+The library has been built and tested on MSVC 12 (2013).
 
 
 Contents
@@ -29,27 +29,14 @@ All library headers are found in the "include" folder.
 The source code includes a demo program and unit tests. The code is provided as a Visual Studio 2013 solution, log_lib.sln.
 
 
-### Pre-built binaries ###
-
-The pre-built demo and tests are found under "bin". Both programs are built on Release|32-bit.
-
-
-### Documentation ###
-
-In the "documentation" folder there are:
-
-- A document named "documentation_and_rationale.txt" which describes the main features of the library, explains the design rationale and discusses possible improvements;
-- The doxygen documentation for the project. Click on doxygen.html to view it.
-
-
 Dependencies
 ------------
 
-- Google Test [1] v. 1.7.0 is required to build the unit tests;
+- GoogleTest [1] v. 1.7.0 is required to build the unit tests;
 
   [1] http://code.google.com/p/googletest
 
-- CMake [2] is required to build Google Test (validated with v. 3.3.2).
+- CMake [2] is required to build GoogleTest (validated with v. 3.3.2).
 
   [2] http://cmake.org
 
@@ -61,7 +48,7 @@ The core library is header-only. The demo application and the unit tests, on the
 
 The code is provided as a Visual Studio 2013 solution. It contains two projects:
 - demo:  A simple command-line application demonstrating the library features;
-- tests: The unit tests, which rely on the Google Test framework.
+- tests: The unit tests, which rely on the GoogleTest framework.
 
 
 ### Use the library ###
@@ -84,18 +71,18 @@ The program demonstrates the following features:
 
 ### Build and run the unit tests ###
 
-The library is unit-tested using the Google Test framework. In order to build the "tests" project, you first need to:
+The library is unit-tested using the GoogleTest framework. In order to build the "tests" project, you first need to:
 
-- Build the Google Test libraries from source;
+- Build the GoogleTest libraries from source;
 - Configure the Visual Studio project with the library paths.
 
-To build Google Test, download the source code [3] and follow the instructions provided in the README. Google Test uses CMake, a cross-platform tool that generates makefiles for your build environment of choice. The CMake build process is explained in the "Using CMake" section of the README. You can also build Google Test with your IDE of choice (see the "Generic Build Instruction" section) but you'll have to set it up manually.
+To build GoogleTest, download the source code [3] and follow the instructions provided in the README. GoogleTest uses CMake, a cross-platform tool that generates makefiles for your build environment of choice. The CMake build process is explained in the "Using CMake" section of the README. You can also build GoogleTest with your IDE of choice (see the "Generic Build Instruction" section) but you'll have to set it up manually.
 
   [3] https://github.com/google/googletest/releases
 
 On Windows the default build process will create two libraries, gtest.lib and gtest_main.lib.
 
-After building the Google Test libraries, you need to add them to the Visual Studio project. Let ${GTEST_ROOT_DIR} be the directory where you downloaded the Google Test code and ${GTEST_BUILD_DIR} the one where the libraries are. You need set up the VS project "tests" as follows:
+After building the GoogleTest libraries, you need to add them to the Visual Studio project. Let ${GTEST_ROOT_DIR} be the directory where you downloaded the GoogleTest code and ${GTEST_BUILD_DIR} the one where the libraries are. You need set up the VS project "tests" as follows:
 
 - Add the headers path ${GTEST_ROOT_DIR}/include to the include directories of the project (Configuration Properties / C/C++ / Additional Include Directories), replacing placeholder __GTEST_INCLUDE__;
 - Add the library path ${GTEST_BUILD_DIR} to the library directories of the project (Configuration Properties / Linker / Additional Library Directories), replacing placeholder __GTEST_LIBS_*__. You need to do this for each different configuration (Debug/Release, 32/64 bits...).
